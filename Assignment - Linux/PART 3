@@ -1,0 +1,74 @@
+# Navigate to the home directory
+cd 
+
+# Navigate to the root directory
+cd /
+
+# Navigate to a specific directory
+cd /path
+
+# Go back to the previous directory
+cd ..
+
+# List files and directories in the current directory
+ls
+
+# List all files, including hidden files
+ls -a
+
+# List files with detailed information (permissions, owner, size, etc.)
+ls -l
+
+# List files with detailed information including hidden files
+ls -la
+
+# Create a new directory
+mkdir Folder
+
+# Change to the new directory
+cd Folder
+
+# Create a new empty file
+touch newfile.txt
+
+# List files in the current directory
+ls
+
+# Move the new file to the parent directory
+mv newfile.txt ..
+
+# Go up one directory level
+cd ..
+
+# Verify the file was moved
+ls
+
+# Move the file back to the new directory
+mv newfile.txt Folder/
+
+# Change to the new directory
+cd new_directory
+
+# Verify the file is in the new directory
+ls
+
+# Create another directory
+mkdir New_Folder
+
+# Move the file to the new directory
+mv newfile.txt New_Folder/
+
+# Change to the new directory
+cd New_Folder
+
+# Verify the file is in the new directory
+ls
+
+# Display the contents of the current directory
+pwd
+
+# Go back to the home directory
+cd ~
+
+# Verify the current directory
+pwd
