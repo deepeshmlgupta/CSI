@@ -1,1 +1,29 @@
+# Create a file
+touch filename.txt
 
+# Assign permissions: read, write, execute for owner; read, execute for group; read for others
+chmod 754 filename.txt
+
+# Change permissions: read, write for owner; read for group; no permissions for others
+chmod 640 filename.txt
+
+# Change permissions: read, write, execute for owner; read, write for group; no permissions for others
+chmod 760 filename.txt
+
+# Assign permissions: read, write for owner; read for group; no permissions for others
+chmod 644 filename.txt
+
+# Assign permissions: read, write, execute for owner; execute for group and others
+chmod 711 filename.txt
+
+# Assign permissions: read, execute for owner, group, and others
+chmod 555 filename.txt
+
+# Assign permissions: no permissions for anyone
+chmod 000 filename.txt
+
+# Assign permissions: read, write, execute for owner; read, write for group; execute for others
+chmod 761 filename.txt
+
+# Assign permissions: read, execute for owner; no permissions for group and others
+chmod 500 filename.txt
