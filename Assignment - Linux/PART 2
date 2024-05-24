@@ -1,0 +1,62 @@
+# List files and directories in the current directory
+ls
+
+# List all files, including hidden files
+ls -a
+
+# List files with detailed information (permissions, owner, size, etc.)
+ls -l
+
+# Change to a different directory
+cd 
+
+# Go up one directory level
+cd ..
+
+# Create a new directory
+mkdir new_directory
+
+# Create a new nested directory structure
+mkdir -p Folder/File
+
+# Remove an empty directory
+rmdir File
+
+# Remove a directory and its contents recursively
+rm -r Folder
+
+# Create an empty file
+touch newfile.txt
+
+# Remove a file
+rm newfile.txt
+
+# Display the current working directory
+pwd
+
+# Move or rename a file or directory
+mv source_file_or_directory target_file_or_directory
+
+# Copy a file
+cp source_file target_file
+
+# Copy a directory and its contents recursively
+cp -r source_directory target_directory
+
+# Display the contents of a file
+cat file.txt
+
+# View the first 10 lines of a file
+head file.txt
+
+# View the last 10 lines of a file
+tail file.txt
+
+# View a file with pagination (press 'q' to quit)
+less file.txt
+
+# Show disk usage of files and directories
+du -h
+
+# Show the amount of free disk space
+df -h
