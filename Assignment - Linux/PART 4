@@ -1,0 +1,38 @@
+# Create a new user
+sudo useradd newuser
+
+# Set a password for the new user
+sudo passwd newuser
+
+# Create a new group
+sudo groupadd newgroup
+
+# Add the new user to the new group
+sudo usermod -aG newgroup newuser
+
+# Change the new user's primary group to the new group
+sudo usermod -g newgroup newuser
+
+# Change ownership of the home directory to the new user
+sudo chown newuser:newgroup /home/newuser
+
+# Change permissions of the home directory
+sudo chmod 755 /home/newuser
+
+# Lock the new user's account
+sudo usermod -L newuser
+
+# Unlock the new user's account
+sudo usermod -U newuser
+
+# Change the new user's shell
+sudo usermod -s /bin/bash newuser
+
+# Delete the new user (without removing their home directory)
+sudo userdel newuser
+
+# Delete the new user and their home directory
+sudo userdel -r newuser
+
+# Delete the new group
+sudo groupdel newgroup
