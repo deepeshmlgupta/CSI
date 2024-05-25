@@ -214,14 +214,14 @@ Download files from the internet
    ```
 
 
-# Upload or download files using SCP (Secure Copy)
+Upload or download files using SCP (Secure Copy)
  ```bash
    scp /path/to/local/file user@remote_host:/path/to/remote/file
    scp user@remote_host:/path/to/remote/file /path/to/local/file
    ```
 
 
-# Synchronize files and directories between two locations
+Synchronize files and directories between two locations
  ```bash
    rsync -avz /path/to/source user@remote_host:/path/to/destination
    ```
