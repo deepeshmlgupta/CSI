@@ -1,65 +1,43 @@
+# Undo the Last Commit
 
-# Steps to Resolve Merge Conflicts
-
-
-1. Fetch the Latest Changes from Remote:
+1. Reset to the Previous Commit:
    ```bash
-   git fetch origin
+   git reset --soft HEAD~1
    ```
 
-2. Merge the Branches:
+2. Unstage the Changes (if needed):
    ```bash
-   git checkout master
-   git merge feature-branch
+   git reset HEAD .
    ```
 
-3. Identify Conflicted Files:
+3. Push the Changes to the Remote Repository:
    ```bash
-   git status
+   git push origin master --force
    ```
 
-4. Open and Resolve Conflicted Files:
-   Open each conflicted file in a text editor and look for conflict markers (<<<<<<<, =======, and >>>>>>>). Edit the files to resolve the conflicts by deciding which changes to keep.
-   ```bash
-   <<<<<<< HEAD
-   This is content from the master branch.
-   =======
-   This is content from the feature branch.
-   >>>>>>> feature-branch
-   ```
-   Remove the conflict markers and make necessary changes to resolve the conflicts.
+# Remove the Last Created File and Keep the Commit History
 
 
-5. Mark the Conflicts as Resolved:
+4. Commit Changes with a Message:
    ```bash
-   git add <conflicted-file>
-   ```
-   Repeat this for each conflicted file.
-
-6. Commit the Merge:
-   ```bash
-   git commit
+   git commit -m "commited message"
    ```
 
-7. Push the Changes:
+# Branching and Merging
+
+
+1. Remove the File:
+   ```bash
+   git rm <file-name>
+   ```
+
+2. Commit the Changes:
+   ```bash
+   git commit -m "Remove <file-name>"
+   ```
+
+3. Push the Changes to the Remote Repository:
    ```bash
    git push origin master
-   ```
-
-8. Create a Pull Request
-Go to your remote repository on GitHub and create a pull request to merge the new-feature branch into the master branch.
-
-9. Merge the Pull Request
-Once the pull request is created, review the changes and merge it into the master branch.
-
-10. Complete sequence of the commands:
-   ```bash
-   git init
-   git remote add origin URL_OF_YOUR_REMOTE_REPOSITORY
-   git checkout -b new-feature
-   echo "Hello, World!" > example.txt
-   git add example.txt
-   git commit -m "Add example.txt with initial content"
-   git push -u origin new-feature
    ```
 
