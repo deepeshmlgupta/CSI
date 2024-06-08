@@ -1,3 +1,5 @@
+# Create Container Instance and deploy a simple docker application on it. Create Container Groups and test functionality
+
 1. Create a file of index.html
 2. Create a Dockerfile for this folder
 3. Build the docker image
