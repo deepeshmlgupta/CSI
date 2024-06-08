@@ -31,3 +31,4 @@
    ```bash
    docker push deepeshacr.azurecr.io/nginx
    ```
+- ![image](https://github.com/deepeshmlgupta/CSI/assets/108192513/87748991-5003-4efa-bd6c-4551f3c76acd)
