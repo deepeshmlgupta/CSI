@@ -1,6 +1,6 @@
 # Create ACR and pull image from ACR and Create a container from it
 
-1. Docker Image download
+1. Docker Image Download
    ```bash
    docker pull ngnix
    ```
@@ -26,8 +26,13 @@
      username:
      password: 
    ```
+6. To Show Images
+   ```bash
+   Docker images
+   ```
 
-6. Docker Push
+   
+7. Docker Push
    ```bash
    docker push deepeshacr.azurecr.io/nginx
    ```
